@@ -1,0 +1,209 @@
+* {
+vertical-align: baseline;
+font-weight: inherit;
+font-family: inherit;
+font-style: inherit;
+font-size: 100%;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.section-order{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    gap: 50px;
+    padding: 100px;
+    background-color: #7A3145;
+    align-items: center;
+}
+
+.h1-order {
+    font-family: Inter Tight;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;  
+    letter-spacing: -1.5%;
+    max-width: 751px;
+    text-transform: uppercase;
+    color: rgba(251, 251, 251, 1);
+}
+
+.harvest-h1 {
+    color: rgba(251, 251, 251, 0.3);
+}
+
+.pg-order {
+    font-family: Inter Tight;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;  
+    max-width: 742px;
+    color: rgba(251, 251, 251, 1);
+    padding-top: 20px;
+}
+
+/* ---------form-and-network---------- */
+
+.form-and-network {
+    max-width: 1080px;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.just-form {
+    width: 100%;
+    max-width: 529px;
+    border-radius: 30px;
+    padding: 50px;
+    gap: 10px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.form-paraghraph {
+    font-family: Inter Tight;
+    max-width: 428px;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;  
+    letter-spacing: -1.5%;
+    color: rgba(20, 20, 20, 1);
+    text-transform: uppercase;
+}
+
+.from-us {
+    color: rgba(122, 49, 69, 1);
+}
+
+.span-the-form {
+    color: rgba(87, 111, 53, 1);
+}
+
+.inputs {
+    margin-top: 50px;
+}
+
+.name {
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    width: 100%;
+    border-radius: 30px;
+    height: 52px;
+    padding-left: 12px;
+}
+
+.name:focus{
+    border: 1px solid rgba(122, 49, 69, 1) ;
+}
+
+.name:hover {
+    border: 1px solid rgba(122, 49, 69, 1) ;
+}
+
+.name::placeholder , .email::placeholder, .comment::placeholder {
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    align-items: center;
+    color: rgba(20, 20, 20, 1);
+}
+
+.email {
+    margin-top: 10px;
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    width: 100%;
+    border-radius: 30px;
+    height: 52px;
+    padding-left: 12px;
+}
+
+.email:focus {
+    border: 1px solid rgba(122, 49, 69, 1) ;
+}
+
+.email:hover {
+    border: 1px solid rgba(122, 49, 69, 1) ;
+}
+
+.comment {
+    margin-top: 10px;
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    width: 100%;
+    border-radius: 15px;
+    height: 95px;
+    padding: 15px;
+    resize: none;
+}
+
+.comment:focus {
+    border: 1px solid rgba(122, 49, 69, 1) ;
+}
+
+.comment:hover {
+    border: 1px solid rgba(122, 49, 69, 1) ;
+}
+
+.form-button-1 {
+    margin-top: 20px;
+    width: 100%;
+    height: 52px;
+    border-radius: 30px;
+    background-color: rgba(87, 111, 53, 1);
+    color: rgba(251, 251, 251, 1);
+    font-family: Inter Tight;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+}
+
+/* -----------just-network----------- */
+
+.just-network {
+    width: 100%;
+    max-width: 527px;
+    border-radius: 30px;
+    padding: 60px;
+    gap: 50px;
+    background-color: rgba(87, 111, 53, 1);
+}
+
+.just-network-photo {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.just-network-social {
+    margin-top: 50px;
+}
+
+.just-network-social-pg {
+    font-family: Inter Tight;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.just-network-social-pg-2 {
+    margin-top: 15px;
+    font-family: Inter Tight;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    color: rgba(251, 251, 251, 1);
+}
+
