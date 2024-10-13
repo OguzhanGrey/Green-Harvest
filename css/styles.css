@@ -82,6 +82,7 @@ img {
     letter-spacing: -1.5%;
     color: rgba(20, 20, 20, 1);
     text-transform: uppercase;
+    width: 100%;
 }
 
 .from-us {
@@ -114,6 +115,7 @@ img {
 
 .name::placeholder , .email::placeholder, .comment::placeholder {
     font-family: Inter Tight;
+    width: 100%;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -208,5 +210,6 @@ img {
     line-height: 32px;
     letter-spacing: -0.015em;
     color: rgba(251, 251, 251, 1);
+    width: 100%;
 }
 
