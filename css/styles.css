@@ -34,6 +34,7 @@ img {
     max-width: 751px;
     text-transform: uppercase;
     color: rgba(251, 251, 251, 1);
+    width: 100%;
 }
 
 .harvest-h1 {
@@ -44,6 +45,7 @@ img {
     font-family: Inter Tight;
     font-weight: 500;
     font-size: 16px;
+    width: 100%;
     line-height: 20px;  
     max-width: 742px;
     color: rgba(251, 251, 251, 1);
@@ -54,6 +56,7 @@ img {
 
 .form-and-network {
     max-width: 1080px;
+    width: 100%;
     gap: 24px;
     display: flex;
     align-items: center;
