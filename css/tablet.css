@@ -1,23 +1,22 @@
-@media screen and (min-width:768px) and (max-width:1280px) {
-    .section-order {
-        max-width: 1280px;
-        width: 100%;
-        padding: 50px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .section-order {
+    max-width: 1280px;
+    width: 100%;
+    padding: 50px;
+  }
 
-    .form-and-network {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .form-and-network {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .just-form {
-        max-width: 1280px;
-        width: 100%;
-    }
+  .just-form {
+    max-width: 1280px;
+    width: 100%;
+  }
 
-    .just-network {
-        max-width: 1280px;
-        width: 100%;
-    }
-    
+  .just-network {
+    max-width: 1280px;
+    width: 100%;
+  }
 }

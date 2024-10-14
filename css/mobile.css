@@ -1,53 +1,53 @@
-@media screen and (min-width:375px) and (max-width:768px) {
-    .section-order {
-        max-width: 768px;
-        width: 100%;
-        padding: 25px;
-    }
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .section-order {
+    max-width: 768px;
+    width: 100%;
+    padding: 25px;
+  }
 
-    .h1-order {
-        font-size: 48px;
-        line-height: 50px;  
-        letter-spacing: -1.5%;
-    }
+  .h1-order {
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: -1.5%;
+  }
 
-    .pg-order {
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .pg-order {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-     .form-and-network {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .form-and-network {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .just-form {
-        max-width: 768px;
-        width: 100%;
-    }
+  .just-form {
+    max-width: 768px;
+    width: 100%;
+  }
 
-    .form-paraghraph {
-        font-size: 24px;
-        line-height: 26px;
-    }
+  .form-paraghraph {
+    font-size: 24px;
+    line-height: 26px;
+  }
 
-    .just-network {
-        max-width: 768px;
-        width: 100%;
-    }
+  .just-network {
+    max-width: 768px;
+    width: 100%;
+  }
 
-    .just-network-social-pg {
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .just-network-social-pg {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-    .just-network-social-pg-2 {
-        font-size: 24px;
-        line-height: 26px;
-    }
+  .just-network-social-pg-2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
 
-    .form-button-1 {
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .form-button-1 {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
