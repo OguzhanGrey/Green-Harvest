@@ -15,6 +15,14 @@ img {
     display: block;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .section-order{
     margin: 0 auto;
     width: 100%;
@@ -97,6 +105,8 @@ img {
     margin-top: 50px;
 }
 
+
+
 .name {
     border: 1px solid rgba(20, 20, 20, 0.2);
     width: 100%;
@@ -105,12 +115,16 @@ img {
     padding-left: 12px;
 }
 
-.name:focus{
+.name:hover {
     border: 1px solid rgba(122, 49, 69, 1) ;
 }
 
-.name:hover {
-    border: 1px solid rgba(122, 49, 69, 1) ;
+.name:focus {
+    border: 1px solid rgba(60, 188, 129, 1);
+}
+
+.name:focus:invalid {
+    border: 1px solid rgba(231, 74, 59, 1);
 }
 
 .name::placeholder , .email::placeholder, .comment::placeholder {
@@ -133,12 +147,16 @@ img {
     padding-left: 12px;
 }
 
-.email:focus {
+.email:hover {
     border: 1px solid rgba(122, 49, 69, 1) ;
 }
 
-.email:hover {
-    border: 1px solid rgba(122, 49, 69, 1) ;
+.email:focus:valid {
+    border: 1px solid rgba(60, 188, 129, 1);
+}
+
+.email:focus:invalid {
+    border: 1px solid rgba(231, 74, 59, 1);
 }
 
 .comment {
@@ -151,12 +169,16 @@ img {
     resize: none;
 }
 
-.comment:focus {
+.comment:hover {
     border: 1px solid rgba(122, 49, 69, 1) ;
 }
 
-.comment:hover {
-    border: 1px solid rgba(122, 49, 69, 1) ;
+.comment:focus:valid {
+    border: 1px solid rgba(60, 188, 129, 1);
+}
+
+.comment:focus:invalid {
+    border: 1px solid rgba(231, 74, 59, 1);
 }
 
 .form-button-1 {
@@ -209,7 +231,14 @@ img {
     font-weight: 600;
     line-height: 32px;
     letter-spacing: -0.015em;
-    color: rgba(251, 251, 251, 1);
     width: 100%;
+    display: flex;
+    gap: 10px;
+    max-width: 357px;
+    flex-wrap: wrap;
+}
+
+.link-network {
+    color: rgba(251, 251, 251, 1);
 }
 
