@@ -34,11 +34,11 @@ a {
 }
 
 .h1-order {
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   font-weight: 600;
   font-size: 64px;
   line-height: 64px;
-  letter-spacing: -1.5%;
+  letter-spacing: 1px;
   max-width: 751px;
   text-transform: uppercase;
   color: rgba(251, 251, 251, 1);
@@ -50,7 +50,7 @@ a {
 }
 
 .pg-order {
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   font-weight: 500;
   font-size: 16px;
   width: 100%;
@@ -82,12 +82,12 @@ a {
 }
 
 .form-paraghraph {
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   max-width: 428px;
   font-weight: 600;
   font-size: 23px;
   line-height: 28px;
-  letter-spacing: -1.5%;
+  letter-spacing: 1px;
   color: rgba(20, 20, 20, 1);
   text-transform: uppercase;
   width: 100%;
@@ -128,7 +128,7 @@ a {
 .name::placeholder,
 .email::placeholder,
 .comment::placeholder {
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   width: 100%;
   font-size: 16px;
   font-weight: 500;
@@ -188,7 +188,7 @@ a {
   border-radius: 30px;
   background-color: rgba(87, 111, 53, 1);
   color: rgba(251, 251, 251, 1);
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
@@ -216,7 +216,7 @@ a {
 }
 
 .just-network-social-pg {
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
@@ -226,7 +226,7 @@ a {
 
 .just-network-social-pg-2 {
   margin-top: 15px;
-  font-family: Inter Tight;
+  font-family: "Inter Tight";
   font-size: 32px;
   font-weight: 600;
   line-height: 32px;
@@ -279,7 +279,7 @@ a {
   .h1-order {
     font-size: 48px;
     line-height: 50px;
-    letter-spacing: -1.5%;
+    letter-spacing: 1px;
   }
 
   .pg-order {
