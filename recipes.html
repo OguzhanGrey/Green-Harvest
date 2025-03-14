@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recipes - Green Harvest</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/recipes.css" />
+    <link rel="stylesheet" href="css/shopping.css" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav-menu">
+          <a class="logo" href="index.html">
+            <svg width="18" height="18">
+              <use href="./images/icons.svg#green-harvest-icon"></use>
+            </svg>
+            GREEN.HARVEST
+          </a>
+
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+          <label for="menu-toggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <ul class="nav-list">
+            <li><a href="index.html#howitworks">How It Works</a></li>
+            <li><a href="index.html#vegetables">Vegetables</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="recipes.html" class="active">Recipes</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+            <li>
+              <button type="button" class="shop-now-btn">SHOP NOW</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="recipes-main">
+      <section class="recipes-hero">
+        <div class="container">
+          <h1>Healthy & Delicious Recipes</h1>
+          <p>
+            Discover our collection of nutritious recipes made with fresh
+            vegetables
+          </p>
+        </div>
+      </section>
+
+      <section class="recipes-categories">
+        <div class="container">
+          <div class="categories-list">
+            <button class="category-btn active">All</button>
+            <button class="category-btn">Salads</button>
+            <button class="category-btn">Soups</button>
+            <button class="category-btn">Main Dishes</button>
+            <button class="category-btn">Sides</button>
+            <button class="category-btn">Vegetarian</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes-grid">
+        <div class="container">
+          <div class="recipes-list">
+            <!-- Recipe Card 1 -->
+            <article class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+                  alt="Garden Fresh Salad"
+                />
+                <span class="recipe-category">Salads</span>
+              </div>
+              <div class="recipe-content">
+                <h3>Garden Fresh Salad</h3>
+                <p>
+                  A refreshing mix of crisp vegetables with a light vinaigrette
+                  dressing.
+                </p>
+                <div class="recipe-meta">
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#time"></use>
+                    </svg>
+                    15 mins</span
+                  >
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#difficulty"></use>
+                    </svg>
+                    Easy</span
+                  >
+                </div>
+                <a href="#" class="view-recipe">View Recipe</a>
+              </div>
+            </article>
+
+            <!-- Recipe Card 2 -->
+            <article class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg"
+                  alt="Vegetable Soup"
+                />
+                <span class="recipe-category">Soups</span>
+              </div>
+              <div class="recipe-content">
+                <h3>Hearty Vegetable Soup</h3>
+                <p>A warming soup packed with seasonal vegetables and herbs.</p>
+                <div class="recipe-meta">
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#time"></use>
+                    </svg>
+                    45 mins</span
+                  >
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#difficulty"></use>
+                    </svg>
+                    Medium</span
+                  >
+                </div>
+                <a href="#" class="view-recipe">View Recipe</a>
+              </div>
+            </article>
+
+            <!-- Recipe Card 3 -->
+            <article class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg"
+                  alt="Roasted Vegetables"
+                />
+                <span class="recipe-category">Sides</span>
+              </div>
+              <div class="recipe-content">
+                <h3>Roasted Root Vegetables</h3>
+                <p>
+                  Perfectly roasted seasonal vegetables with herbs and olive
+                  oil.
+                </p>
+                <div class="recipe-meta">
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#time"></use>
+                    </svg>
+                    40 mins</span
+                  >
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#difficulty"></use>
+                    </svg>
+                    Easy</span
+                  >
+                </div>
+                <a href="#" class="view-recipe">View Recipe</a>
+              </div>
+            </article>
+
+            <!-- Recipe Card 4 -->
+            <article class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg"
+                  alt="Vegetable Stir Fry"
+                />
+                <span class="recipe-category">Main Dishes</span>
+              </div>
+              <div class="recipe-content">
+                <h3>Colorful Vegetable Stir Fry</h3>
+                <p>
+                  Quick and healthy stir-fried vegetables with Asian-inspired
+                  sauce.
+                </p>
+                <div class="recipe-meta">
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#time"></use>
+                    </svg>
+                    25 mins</span
+                  >
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#difficulty"></use>
+                    </svg>
+                    Medium</span
+                  >
+                </div>
+                <a href="#" class="view-recipe">View Recipe</a>
+              </div>
+            </article>
+
+            <!-- Recipe Card 5 -->
+            <article class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg"
+                  alt="Quinoa Bowl"
+                />
+                <span class="recipe-category">Vegetarian</span>
+              </div>
+              <div class="recipe-content">
+                <h3>Nourishing Quinoa Bowl</h3>
+                <p>
+                  A protein-rich bowl with quinoa, roasted vegetables, and
+                  tahini dressing.
+                </p>
+                <div class="recipe-meta">
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#time"></use>
+                    </svg>
+                    30 mins</span
+                  >
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#difficulty"></use>
+                    </svg>
+                    Easy</span
+                  >
+                </div>
+                <a href="#" class="view-recipe">View Recipe</a>
+              </div>
+            </article>
+
+            <!-- Recipe Card 6 -->
+            <article class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg"
+                  alt="Vegetable Pasta"
+                />
+                <span class="recipe-category">Main Dishes</span>
+              </div>
+              <div class="recipe-content">
+                <h3>Garden Vegetable Pasta</h3>
+                <p>
+                  Fresh pasta tossed with seasonal vegetables and light herb
+                  sauce.
+                </p>
+                <div class="recipe-meta">
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#time"></use>
+                    </svg>
+                    35 mins</span
+                  >
+                  <span
+                    ><svg width="16" height="16">
+                      <use href="./images/icons.svg#difficulty"></use>
+                    </svg>
+                    Medium</span
+                  >
+                </div>
+                <a href="#" class="view-recipe">View Recipe</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Get Weekly Recipes</h2>
+            <p>
+              Subscribe to our newsletter and receive new recipes every week!
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <div class="footer">
+          <div class="menuft-footer">
+            <div class="sol-footer">
+              <div class="ustlogo-footer">
+                <svg class="logo-svg" width="18" height="18">
+                  <use href="./images/icons.svg#green-harvest-icon"></use>
+                </svg>
+                <a href="">GREEN.HARVEST</a>
+              </div>
+              <p class="text-footer">
+                Whether you're looking for a healthy snack or a thoughtful gift,
+                our fruit baskets are the perfect choice.
+              </p>
+            </div>
+            <div class="sag-footer">
+              <ul>
+                <li><a href="index.html#howitworks">how it works</a></li>
+                <li><a href="index.html#vegetables">vegetables</a></li>
+                <li><a href="index.html#reviews">reviews</a></li>
+              </ul>
+            </div>
+            <address>
+              <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+              <p>1678 S. Pioneer Road Salt Lake City UT 84104</p>
+            </address>
+          </div>
+          <div class="privacy-footer">
+            <div class="sol-footer">
+              <p>
+                <a href="">Privacy Policy</a> / <a href="">Cookie settings</a>
+              </p>
+            </div>
+            <div class="sag-footer">
+              <p>©Green Harvest 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

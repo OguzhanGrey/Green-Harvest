@@ -1,0 +1,201 @@
+.shopping-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.shopping-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 90%;
+  width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+.modal-title {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-subtitle {
+  font-size: 18px;
+  color: #7a3145;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.vegetable-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.vegetable-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.vegetable-card:hover {
+  transform: translateY(-5px);
+}
+
+.veg-img-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.veg-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.veg-info {
+  padding: 20px;
+}
+
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.name-price h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.price {
+  font-size: 18px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.veg-description {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.veg-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.quantity-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  flex: 1;
+  padding: 8px 15px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #219a52;
+}
+
+.add-to-cart.added {
+  background-color: #219a52;
+}
+
+.cart-summary {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.order-button {
+  padding: 15px 30px;
+  background-color: #7a3145;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #622133;
+}
+
+@media (max-width: 768px) {
+  .shopping-modal-content {
+    padding: 20px;
+  }
+
+  .vegetable-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+
+  .modal-subtitle {
+    font-size: 16px;
+  }
+
+  .veg-controls {
+    flex-direction: column;
+  }
+
+  .quantity-input {
+    width: 100%;
+  }
+}
+
+/* Scrollbar styling */
+.shopping-modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.shopping-modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.shopping-modal-content::-webkit-scrollbar-thumb {
+  background: #a1c487;
+  border-radius: 4px;
+}
+
+.shopping-modal-content::-webkit-scrollbar-thumb:hover {
+  background: #8aaf6e;
+}

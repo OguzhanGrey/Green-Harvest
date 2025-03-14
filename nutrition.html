@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nutrition - Green Harvest</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nutrition.css" />
+    <link rel="stylesheet" href="css/shopping.css" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav-menu">
+          <a class="logo" href="index.html">
+            <svg width="18" height="18">
+              <use href="./images/icons.svg#green-harvest-icon"></use>
+            </svg>
+            GREEN.HARVEST
+          </a>
+
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+          <label for="menu-toggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <ul class="nav-list">
+            <li><a href="index.html#howitworks">How It Works</a></li>
+            <li><a href="index.html#vegetables">Vegetables</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="nutrition.html" class="active">Nutrition</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+            <li>
+              <button type="button" class="shop-now-btn">SHOP NOW</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="nutrition-main">
+      <section class="nutrition-hero">
+        <div class="container">
+          <h1>Nutrition Guide</h1>
+          <p>Learn about the nutritional benefits of our fresh vegetables</p>
+        </div>
+      </section>
+
+      <section class="nutrition-overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-content">
+              <h2>Why Vegetables Matter</h2>
+              <p>
+                Vegetables are an essential part of a healthy diet, providing
+                vital nutrients, fiber, and antioxidants that help maintain good
+                health and prevent various diseases.
+              </p>
+              <ul class="benefits-list">
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                  Rich in vitamins and minerals
+                </li>
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                  High in dietary fiber
+                </li>
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                  Low in calories
+                </li>
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                  Contains antioxidants
+                </li>
+              </ul>
+            </div>
+            <div class="overview-image">
+              <img
+                src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg"
+                alt="Fresh Vegetables"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nutrition-facts">
+        <div class="container">
+          <h2>Nutritional Information</h2>
+          <div class="facts-grid">
+            <!-- Vegetable Card 1 -->
+            <article class="vegetable-card">
+              <img
+                src="https://images.pexels.com/photos/2286776/pexels-photo-2286776.jpeg"
+                alt="Potatoes"
+              />
+              <div class="vegetable-content">
+                <h3>Potatoes</h3>
+                <div class="nutrition-table">
+                  <div class="nutrition-row">
+                    <span>Calories</span>
+                    <span>77 kcal</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Carbohydrates</span>
+                    <span>17g</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Protein</span>
+                    <span>2g</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Fiber</span>
+                    <span>2.2g</span>
+                  </div>
+                </div>
+                <p class="benefits">
+                  Rich in potassium, vitamin C, and B vitamins. Good source of
+                  energy.
+                </p>
+              </div>
+            </article>
+
+            <!-- Vegetable Card 2 -->
+            <article class="vegetable-card">
+              <img
+                src="https://images.pexels.com/photos/2325843/pexels-photo-2325843.jpeg"
+                alt="Carrots"
+              />
+              <div class="vegetable-content">
+                <h3>Carrots</h3>
+                <div class="nutrition-table">
+                  <div class="nutrition-row">
+                    <span>Calories</span>
+                    <span>41 kcal</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Carbohydrates</span>
+                    <span>10g</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Protein</span>
+                    <span>0.9g</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Fiber</span>
+                    <span>2.8g</span>
+                  </div>
+                </div>
+                <p class="benefits">
+                  High in beta carotene, fiber, and antioxidants. Promotes eye
+                  health.
+                </p>
+              </div>
+            </article>
+
+            <!-- Vegetable Card 3 -->
+            <article class="vegetable-card">
+              <img
+                src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg"
+                alt="Broccoli"
+              />
+              <div class="vegetable-content">
+                <h3>Broccoli</h3>
+                <div class="nutrition-table">
+                  <div class="nutrition-row">
+                    <span>Calories</span>
+                    <span>55 kcal</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Carbohydrates</span>
+                    <span>11g</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Protein</span>
+                    <span>3.7g</span>
+                  </div>
+                  <div class="nutrition-row">
+                    <span>Fiber</span>
+                    <span>2.6g</span>
+                  </div>
+                </div>
+                <p class="benefits">
+                  Contains sulforaphane, high in vitamin C and K. Supports
+                  immune system.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="nutrition-tips">
+        <div class="container">
+          <div class="tips-content">
+            <h2>Healthy Eating Tips</h2>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <svg width="48" height="48">
+                  <use href="./images/icons.svg#rainbow"></use>
+                </svg>
+                <h3>Eat the Rainbow</h3>
+                <p>
+                  Choose vegetables of different colors to get a variety of
+                  nutrients and antioxidants.
+                </p>
+              </div>
+              <div class="tip-card">
+                <svg width="48" height="48">
+                  <use href="./images/icons.svg#cooking"></use>
+                </svg>
+                <h3>Cooking Methods</h3>
+                <p>
+                  Steam or roast vegetables to retain their nutritional value
+                  and enhance flavor.
+                </p>
+              </div>
+              <div class="tip-card">
+                <svg width="48" height="48">
+                  <use href="./images/icons.svg#portion"></use>
+                </svg>
+                <h3>Portion Size</h3>
+                <p>
+                  Fill half your plate with vegetables for a balanced, healthy
+                  meal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <div class="footer">
+          <div class="menuft-footer">
+            <div class="sol-footer">
+              <div class="ustlogo-footer">
+                <svg class="logo-svg" width="18" height="18">
+                  <use href="./images/icons.svg#green-harvest-icon"></use>
+                </svg>
+                <a href="">GREEN.HARVEST</a>
+              </div>
+              <p class="text-footer">
+                Whether you're looking for a healthy snack or a thoughtful gift,
+                our fruit baskets are the perfect choice.
+              </p>
+            </div>
+            <div class="sag-footer">
+              <ul>
+                <li><a href="index.html#howitworks">how it works</a></li>
+                <li><a href="index.html#vegetables">vegetables</a></li>
+                <li><a href="index.html#reviews">reviews</a></li>
+              </ul>
+            </div>
+            <address>
+              <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+              <p>1678 S. Pioneer Road Salt Lake City UT 84104</p>
+            </address>
+          </div>
+          <div class="privacy-footer">
+            <div class="sol-footer">
+              <p>
+                <a href="">Privacy Policy</a> / <a href="">Cookie settings</a>
+              </p>
+            </div>
+            <div class="sag-footer">
+              <p>©Green Harvest 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

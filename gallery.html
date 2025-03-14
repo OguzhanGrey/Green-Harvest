@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gallery - Green Harvest</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/shopping.css" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav-menu">
+          <a class="logo" href="index.html">
+            <svg width="18" height="18">
+              <use href="./images/icons.svg#green-harvest-icon"></use>
+            </svg>
+            GREEN.HARVEST
+          </a>
+
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+          <label for="menu-toggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <ul class="nav-list">
+            <li><a href="index.html#howitworks">How It Works</a></li>
+            <li><a href="index.html#vegetables">Vegetables</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+            <li>
+              <button type="button" class="shop-now-btn">SHOP NOW</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="gallery-main">
+      <section class="gallery-hero">
+        <div class="container">
+          <h1>Our Gallery</h1>
+          <p>Explore our collection of fresh vegetables and farming moments</p>
+        </div>
+      </section>
+
+      <section class="gallery-filters">
+        <div class="container">
+          <div class="filters-list">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Vegetables</button>
+            <button class="filter-btn">Farming</button>
+            <button class="filter-btn">Harvest</button>
+            <button class="filter-btn">Products</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-grid">
+        <div class="container">
+          <div class="gallery-items">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/2286776/pexels-photo-2286776.jpeg"
+                alt="Fresh Potatoes"
+              />
+              <div class="item-overlay">
+                <h3>Fresh Potatoes</h3>
+                <p>Organically grown potatoes ready for harvest</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/2325843/pexels-photo-2325843.jpeg"
+                alt="Carrots"
+              />
+              <div class="item-overlay">
+                <h3>Fresh Carrots</h3>
+                <p>Sweet and crunchy carrots from our farm</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg"
+                alt="Broccoli"
+              />
+              <div class="item-overlay">
+                <h3>Fresh Broccoli</h3>
+                <p>Nutrient-rich broccoli heads</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg"
+                alt="Farming"
+              />
+              <div class="item-overlay">
+                <h3>Our Farm</h3>
+                <p>Where your vegetables are grown with care</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+                alt="Harvest"
+              />
+              <div class="item-overlay">
+                <h3>Harvest Time</h3>
+                <p>Collecting fresh vegetables at their peak</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg"
+                alt="Products"
+              />
+              <div class="item-overlay">
+                <h3>Fresh Products</h3>
+                <p>Ready for delivery to your doorstep</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg"
+                alt="Vegetables"
+              />
+              <div class="item-overlay">
+                <h3>Mixed Vegetables</h3>
+                <p>A colorful variety of fresh produce</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg"
+                alt="Farming Process"
+              />
+              <div class="item-overlay">
+                <h3>Growing Process</h3>
+                <p>From seed to harvest with care</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 9 -->
+            <div class="gallery-item">
+              <img
+                src="https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg"
+                alt="Organic Farming"
+              />
+              <div class="item-overlay">
+                <h3>Organic Farming</h3>
+                <p>Sustainable and environmentally friendly practices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <div class="footer">
+          <div class="menuft-footer">
+            <div class="sol-footer">
+              <div class="ustlogo-footer">
+                <svg class="logo-svg" width="18" height="18">
+                  <use href="./images/icons.svg#green-harvest-icon"></use>
+                </svg>
+                <a href="">GREEN.HARVEST</a>
+              </div>
+              <p class="text-footer">
+                Whether you're looking for a healthy snack or a thoughtful gift,
+                our fruit baskets are the perfect choice.
+              </p>
+            </div>
+            <div class="sag-footer">
+              <ul>
+                <li><a href="index.html#howitworks">how it works</a></li>
+                <li><a href="index.html#vegetables">vegetables</a></li>
+                <li><a href="index.html#reviews">reviews</a></li>
+              </ul>
+            </div>
+            <address>
+              <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+              <p>1678 S. Pioneer Road Salt Lake City UT 84104</p>
+            </address>
+          </div>
+          <div class="privacy-footer">
+            <div class="sol-footer">
+              <p>
+                <a href="">Privacy Policy</a> / <a href="">Cookie settings</a>
+              </p>
+            </div>
+            <div class="sag-footer">
+              <p>©Green Harvest 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
