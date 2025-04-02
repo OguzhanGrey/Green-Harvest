@@ -1,4 +1,3 @@
-// Menu toggle functionality
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const menu = document.querySelector(".nav-list");
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Initialize shopping functionality for all shop now buttons across pages
   function initializeShopNowButtons() {
     const shopNowButtons = document.querySelectorAll(
       ".shop-now-btn, .shop-now-hero"
@@ -19,15 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Initial initialization
   initializeShopNowButtons();
 
-  // Re-initialize when content changes (for dynamic content)
   const observer = new MutationObserver(initializeShopNowButtons);
   observer.observe(document.body, { childList: true, subtree: true });
 });
 
-// Shopping cart functionality
 let cart = [];
 
 function openShoppingCart() {
@@ -42,7 +37,6 @@ function openShoppingCart() {
   closeBtn.innerHTML = "&times;";
   closeBtn.onclick = () => modal.remove();
 
-  // Modal dışına tıklandığında kapatma
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.remove();
@@ -57,7 +51,6 @@ function openShoppingCart() {
   subtitle.className = "modal-subtitle";
   subtitle.textContent = "Select your fresh organic vegetables";
 
-  // Add vegetables selection
   const vegetables = [
     {
       name: "Eggplant",
@@ -224,4 +217,16 @@ function openShoppingCart() {
 // Alert button functionality
 document.querySelector(".alert-btn").addEventListener("click", () => {
   alert("Hi everyone from javascript");
+});
+
+// Hamburger menü linklerine tıklandığında menüyü kapat
+document.addEventListener("DOMContentLoaded", function () {
+  const menuCheckbox = document.getElementById("menu-toggle");
+  const navLinks = document.querySelectorAll(".nav-list a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuCheckbox.checked = false;
+    });
+  });
 });

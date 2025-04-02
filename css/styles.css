@@ -229,7 +229,7 @@ header a {
   label[for="menu-toggle"] span {
     height: 2px;
     width: 20px;
-    background: #fbfbfb;
+    background: #7a3145;
     border-radius: 10px;
     transition: all 0.5s ease; /* Geçiş efekti */
   }
@@ -461,7 +461,7 @@ header a {
   label[for="menu-toggle"] span {
     height: 2px;
     width: 20px;
-    background: #fbfbfb;
+    background: #7a3145;
     border-radius: 10px;
     transition: all 0.5s ease; /* Geçiş efekti */
   }
@@ -2287,6 +2287,8 @@ logo-svg {
   left: 0;
   right: 0;
   z-index: 1000;
+  padding: 15px 0;
+  height: 70px;
 }
 
 .container {
@@ -2297,111 +2299,76 @@ logo-svg {
 
 .nav-menu {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
+  align-items: center;
+  position: relative;
+  height: 100%;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #2c3e50;
-  font-weight: 700;
+  gap: 8px;
+  font-weight: 600;
   font-size: 18px;
-  margin-right: 40px;
-}
-
-.logo svg {
-  fill: #27ae60;
+  color: #141414;
 }
 
 .nav-list {
   display: flex;
+  gap: 20px;
   align-items: center;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list li {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list li:last-child {
-  margin-left: 10px;
 }
 
 .nav-list a {
-  text-decoration: none;
-  color: #2c3e50;
-  font-size: 16px;
-  transition: color 0.3s;
-  line-height: 1;
-  padding: 8px 0;
-  white-space: nowrap;
+  color: #141414;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav-list a:hover,
-.nav-list a.active {
+.nav-list a:hover {
   color: #27ae60;
 }
 
-/* Buton stilleri */
-button.login-btn,
-a.login-btn,
-button.sign-in-btn,
-a.sign-in-btn,
-.alert-btn,
-.shop-now-btn {
-  padding: 8px 20px;
-  border: 1px solid #27ae60;
+.login-btn {
+  padding: 8px 16px;
+  background: #27ae60;
+  color: #fff !important;
   border-radius: 5px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 16px;
-  white-space: nowrap;
-  margin-left: 10px;
+  transition: background-color 0.3s ease;
 }
 
-button.login-btn,
-a.login-btn {
-  color: #ffffff !important;
-  background: #27ae60;
+.login-btn:hover {
+  background: #219a52;
+}
+
+.alert-btn,
+.shop-now-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .alert-btn {
-  background: #ffffff;
-  color: #27ae60;
+  background: #f8f9fa;
+  color: #141414;
+  border: 1px solid #ddd;
+}
+
+.alert-btn:hover {
+  background: #e9ecef;
 }
 
 .shop-now-btn {
   background: #27ae60;
-  color: #ffffff;
-}
-
-button.login-btn:hover,
-a.login-btn:hover {
-  background: #ffffff !important;
-  color: #27ae60 !important;
-}
-
-.alert-btn:hover {
-  background: #27ae60;
-  color: #ffffff;
+  color: #fff;
+  border: none;
 }
 
 .shop-now-btn:hover {
   background: #219a52;
-}
-
-.menu-checkbox {
-  display: none;
 }
 
 .menu-toggle {
@@ -2409,25 +2376,40 @@ a.login-btn:hover {
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
 }
 
 .menu-toggle span {
   display: block;
   width: 25px;
   height: 2px;
-  background: #2c3e50;
-  transition: all 0.3s;
+  background: #7a3145;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 968px) {
+.menu-checkbox {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .menu-toggle {
     display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
   }
 
   .nav-list {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 70px;
     left: 0;
     right: 0;
     background: #fff;
@@ -2435,6 +2417,9 @@ a.login-btn:hover {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    z-index: 1000;
   }
 
   .menu-checkbox:checked ~ .nav-list {
@@ -2443,6 +2428,7 @@ a.login-btn:hover {
 
   .menu-checkbox:checked + .menu-toggle span:first-child {
     transform: rotate(45deg) translate(6px, 6px);
+    background: #7a3145;
   }
 
   .menu-checkbox:checked + .menu-toggle span:nth-child(2) {
@@ -2451,12 +2437,42 @@ a.login-btn:hover {
 
   .menu-checkbox:checked + .menu-toggle span:last-child {
     transform: rotate(-45deg) translate(6px, -6px);
+    background: #7a3145;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 10px;
+  }
+
+  .login-btn,
+  .alert-btn,
+  .shop-now-btn {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .nav-list {
+    display: flex !important;
   }
 }
 
 /* Add margin-top to main content to account for fixed header */
 main {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .hero {
@@ -2464,11 +2480,10 @@ main {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  margin-top: -80px;
+  margin-top: -70px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding-top: 70px;
 }
 
 .hero::before {
@@ -2508,6 +2523,10 @@ main {
   padding: 0 20px;
   text-align: center;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-hero {
@@ -2520,6 +2539,9 @@ main {
   letter-spacing: -1px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   animation: fadeInDown 1s ease-out;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .text-hero {
@@ -2533,6 +2555,9 @@ main {
   opacity: 0.9;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   animation: fadeInUp 1s ease-out 0.3s both;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 @keyframes fadeInDown {
@@ -2573,17 +2598,34 @@ main {
 
 @media screen and (max-width: 768px) {
   .hero {
-    padding-top: 90px;
+    padding-top: 0;
+    margin-top: -70px;
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+    width: 100%;
   }
 
   .title-hero {
     font-size: 48px;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 335px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
 
   .text-hero {
     font-size: 18px;
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 335px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
 }
 
